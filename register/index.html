@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile - Giorgio Tsoukalos</title>
+
+    <style>
+    .item {
+      margin-bottom: 2px;
+    }
+    </style>
+  </head>
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">PleaseSignUpApp</a>
+        </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#about">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Spacing for NavBar -->
+      <br/><br/><br/>
+
+      <div id="container_alert"></div>
+
+
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+
+
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Send Email
+                  </label>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label for="inputGender3" class="col-sm-2 control-label">Gender</label>
+              <div class="col-sm-10">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="male">
+                    Male
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="female">
+                    Female
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="decline" checked>
+                     Decline to specify
+                  </label>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Sign in</button>
+              </div>
+            </div>
+          </form>
+          
+
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+
+
+      <div class="footer">
+        <div class="well well-sm">Made by Adam Cardenas &mdash; Stored <a href="https://github.com/cevaris/bootstrap-ch3" target="_blank">https://github.com/cevaris/bootstrap-ch3</div>
+      </div>
+    
+    </div>
+
+
+
+    <div id="alert_contact" class="hidden">
+      <div class="alert alert-success">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        Contact request sent to Giorgio Tsoukalos
+      </div>
+    </div>
+
+
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+
+    <script>
+      $('#contact_request').on('click', function() { $('#container_alert').html($("#alert_contact").html()); });
+    </script>
+  </body>
+</html>
